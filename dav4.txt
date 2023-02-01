@@ -1,0 +1,29 @@
+table user {
+  id int [pk]
+  email varchar
+}
+table student {
+  id int [pk]
+  user int
+  name varchar
+  lastname varchar
+  email varchar
+  addres varchar
+  birthdate varchar
+  gender varchar
+  
+}
+
+table lecturer {
+  id int [pk]
+  user int
+  email varchar
+  name varchar
+  lastname varchar
+  accountnumber varchar
+  
+}
+
+Ref:lecturer.user > user.id
+
+Ref:student.user > user.id
